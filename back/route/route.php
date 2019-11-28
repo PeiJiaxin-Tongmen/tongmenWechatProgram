@@ -9,7 +9,7 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-Route::get('think', function () {
+/*Route::get('think', function () {
     return 'hello,ThinkPHP5!';
 });
 
@@ -17,4 +17,7 @@ Route::get('hello/:name', 'index/hello');
 
 return [
 
-];
+];*/
+
+//升级版本出了个这问题。居然不用这use think\Route;了
+Route::get('banner','api/v1.Banner/getBanner');
